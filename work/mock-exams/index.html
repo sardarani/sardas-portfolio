@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Reimagining Mock Exams — Coming soon</title>
+	<meta name="description" content="The Reimagining Mock Exams case study is on its way.">
+	<style>
+		@font-face { font-family: "Caveat"; src: url("../../assets/fonts/caveat-semibold.woff2"); font-weight: 600; font-display: swap; }
+		@font-face { font-family: "Inter Display"; src: url("../../assets/fonts/inter-display-bold-6.woff2"); font-weight: 700; font-display: swap; }
+		@font-face { font-family: "Be Vietnam Pro"; src: url("../../assets/fonts/be-vietnam-pro-medium.woff2"); font-weight: 500; font-display: swap; }
+
+		:root {
+			--bg: #e8f7ff;
+			--grid: rgba(32, 32, 32, 0.04);
+			--ink: #202020;
+			--ink-soft: #202020b8;
+			--ink-muted: #20202059;
+			--blue: #3478f6;
+			--note: #ffb247;
+			--tape: rgba(255, 255, 255, 0.6);
+		}
+
+		* { box-sizing: border-box; margin: 0; }
+
+		body {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 40px;
+			padding: 48px 16px;
+			background-color: var(--bg);
+			background-image:
+				repeating-linear-gradient(0deg, transparent 0px, transparent 39px, var(--grid) 39px, var(--grid) 40px),
+				repeating-linear-gradient(90deg, transparent 0px, transparent 39px, var(--grid) 39px, var(--grid) 40px);
+			color: var(--ink);
+			font-family: "Be Vietnam Pro", system-ui, sans-serif;
+			font-weight: 500;
+		}
+
+		.eyebrow {
+			font-family: "Caveat", cursive;
+			font-weight: 600;
+			font-size: 24px;
+			color: var(--blue);
+			transform: rotate(-2deg);
+		}
+
+		.note {
+			position: relative;
+			width: min(520px, 100%);
+			padding: 44px 32px 40px;
+			background: var(--note);
+			box-shadow: 0 20px 40px -20px #1e1e1e66;
+			transform: rotate(-1.3deg);
+			text-align: center;
+		}
+
+		.note::before {
+			content: "";
+			position: absolute;
+			top: -12px;
+			left: 50%;
+			width: 96px;
+			height: 26px;
+			background: var(--tape);
+			transform: translateX(-50%) rotate(2deg);
+		}
+
+		h1 {
+			font-family: "Inter Display", system-ui, sans-serif;
+			font-weight: 700;
+			font-size: clamp(32px, 7vw, 48px);
+			line-height: 1.05;
+			letter-spacing: -0.03em;
+		}
+
+		.note p {
+			margin-top: 14px;
+			font-size: 16px;
+			line-height: 1.5;
+			color: var(--ink-soft);
+		}
+
+		.note .script {
+			margin-top: 18px;
+			font-family: "Caveat", cursive;
+			font-weight: 600;
+			font-size: 22px;
+			color: var(--ink);
+		}
+
+		.back {
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			padding: 16px 24px;
+			border-radius: 14px;
+			background: var(--ink);
+			color: #fff;
+			font-size: 15px;
+			text-decoration: none;
+			box-shadow: 0 20px 40px -20px #1e1e1e66;
+			transition: transform 0.2s ease;
+		}
+
+		.back:hover { transform: translateY(-2px); }
+		.back:focus-visible { outline: 2px solid var(--blue); outline-offset: 3px; }
+
+		footer {
+			font-size: 13px;
+			color: var(--ink-muted);
+		}
+	</style>
+</head>
+<body>
+	<p class="eyebrow">still drying on the board</p>
+
+	<main class="note">
+		<h1>Reimagining Mock Exams</h1>
+		<p>The full case study is on its way: how we turned 2X revenue within a month.</p>
+		<p class="script">coming soon</p>
+	</main>
+
+	<a class="back" href="../../#work">&larr; Back to selected work</a>
+
+	<footer>&copy; 2026 Kumari Sarda Rani ✦ Designed with curiosity</footer>
+</body>
+</html>
